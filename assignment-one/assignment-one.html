@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- font awesome icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<input type="text" value='some text' id='myinput'>
+	<button type='button' id='mybtn' onclick='javascript:alert("hello world")'>Button</button>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type='text/javascript'>
+		// $(document).ready(function(){
+		// });
+		
+		var input = document.getElementById('myinput');
+		input.addEventListener('keyup',function(event){
+			event.preventDefault();
+			if(event.keyCode === 13){
+				document.getElementById('mybtn').click();
+			}
+		});
+	</script>
+</body>
+</html>
